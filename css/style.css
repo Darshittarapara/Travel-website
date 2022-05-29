@@ -1,0 +1,756 @@
+*{
+  margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-style: Thin 100 Italic;
+font-family: 'Roboto', sans-serif;
+}  
+
+  #menu,#close {
+    display: none;
+  }
+  .header{
+    color: whitesmoke;
+    height: 80px;
+    background-color: rgb(132, 124, 124);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+  }
+  
+
+  
+  .header div h1 {
+    color: white;
+  }
+  .header div h1 span {
+    color: rgb(255, 170, 0);
+  }
+  .header div nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 15px;
+    transition:all 0.25s ease-in-out;
+  
+    color: white;
+    font-size: 18px;
+   
+  }
+  .header div nav ul li:hover {
+    cursor: pointer;
+    color: black;
+  }
+  .header div  i {
+    font-size: 24px;
+    margin: 0px 10px;
+  }
+  .header .none {
+    position: absolute;
+   
+    top: -70px;
+  transition: all 0.25s ease-in-out;
+    background-color: rgb(132, 124, 124);
+  width: 99vw;
+    
+    overflow: hidden;
+   
+  }  
+  
+.Parent-block .silder .change{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .header .none  form  input[type='text']{
+    width: 400px;
+    padding: 9px 0px;
+    width: 96vw;
+  }
+  .none  form  button {
+    background: black;
+    padding: 7px 10px;
+    margin-top: 5px;
+    position: absolute;
+    right: 0px;
+    
+  }
+  .none  form  button  i {
+    color: white;
+    font-size: 12px;
+  }
+  .header .display-search{
+    background-color: rgb(132, 124, 124);
+    position: absolute;
+    overflow: hidden;
+    top: 80px;
+    
+  }
+  
+
+  /*Video contain*/
+  .Parent-block {
+  position: relative;  
+  }
+  
+  
+  .Parent-block .silder {
+    width: 100%;
+    height: 800px;
+    display: none;
+    
+  
+  }
+  .Parent-block .first{
+    display: block;
+    
+  }
+  .Parent-block .silder  video{
+    width: 100%;
+    object-fit: cover;
+  height:100%;
+  }
+  .Parent-block .silder-icon {
+    display: flex;
+    position: absolute;
+    top: 62%;
+    border-radius: 20px;
+    left: 44%;
+    background: black;
+    width: 170px;
+    padding: 10px 40px; 
+  
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Parent-block .silder-icon .fa-circle {
+ margin: 0px 7px;
+  color: white;
+  }
+  .Parent-block .silder-icon  .next{
+    position: absolute;
+    right: 20px;
+  }
+  .Parent-block .first div{
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+  
+    
+    color: white;
+
+  
+    height: 100%;
+  }
+  .Parent-block .first div h1 {
+    font-size: 2.4em;
+
+    text-transform: capitalize;
+  }
+  .Parent-block .first div h4 {
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .Parent-block .first div a {
+    text-decoration: none;
+    color: white;
+    background: orange;
+    transition: all 0.25s ease-in-out;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+  .Parent-block .first div a:hover {
+    background: transparent;
+    border: 3px solid white;
+  }
+  
+  
+  /* Booking css*/
+  .booking .booking-img{
+  width: 45%;
+  height: 700px;
+  }
+  .booking{
+    margin-top:10px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .booking .booking-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .booking .booking-block  {
+    box-shadow: 0px 0px 20px 10px  rgba(0, 0, 0, 0.1);
+  width: 40%;
+  }
+  .booking .booking-block form{
+  display: flex;
+  padding: 20px;
+  flex-direction: column;  
+  margin-top: 80px;
+  color: #282c34;
+  font-weight: bolder;
+  }
+  .booking .booking-block form textarea {
+    resize: none;
+    font-size: 20px;
+    
+  }
+  .booking .booking-block form input::placeholder,.booking .booking-block form textarea::placeholder{
+    padding: 10px;
+  }
+  
+
+  .booking .booking-block form input{
+    margin: 15px 0px;
+    padding: 10px 10px;
+  }
+  .booking .booking-block form input[type='submit']{
+    background: orange;
+    width: 200px;
+    padding: 15px 10px;
+    border: 0px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  .span {
+    text-align: center;
+    margin-top: 80px ;
+    display: flex;
+    justify-content: center;
+  }
+  .span span {
+    background: rgba(255, 170, 0,0.5);
+    font-size: 4em;
+    margin: 0px 5px;
+    padding: 10px 10px;
+    display: inline-block;
+    color: orange;
+    text-align: center;
+  
+  }
+  .span div {
+    margin-left: 18px;
+  }
+  
+  
+  .box-container{
+    padding: 30px 100px;
+    margin-top: 30px;
+  }
+  .box-child-container {
+    display: flex;
+    padding: 0px 80px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .box-child-container .box {
+  margin: 10px 10px;
+  text-align: center;
+  }
+  .box-child-container .box i {
+    color: orange;
+    font-size:3.4em;
+  }
+  .box-child-container .box  h3 {
+    font-size: 32px;
+    margin: 10px 0px;
+  }
+  .box-child-container .box p{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  #btn-block{
+    position: absolute;
+    right: 20px;
+    margin-bottom:200px;
+  }
+  #btn-block #btn{
+    padding:20px 20px;
+    background: orange;
+    border-radius: 50%;
+    font-size: 29px;
+    border: 0px;
+   
+    color: white;
+  }
+  /* Footer start here*/
+  .footer {
+    margin-top: 100px;
+    padding: 30px 60px;
+    background: rgb(73, 69, 69);
+    display: flex;
+   
+    height: 450px;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+  } 
+  .footer .common{
+    width: 25%;
+  
+  }
+  .footer .about p{
+    text-align: left;
+    padding-top: 15px;
+    width: 80%;
+    padding-right: 26px;
+  }
+  .footer .common ul li {
+    list-style-type: none;
+    margin: 18px 0px;
+  }
+  .footer .common h2{
+    font-size: 2.0em;
+  }
+  .footer .location h2,.footer .social-links h2{
+    margin-top: 42px;
+  }
+  .footer .links {
+    margin-top: 120px;
+  }
+  .footer .social-links ul li a{
+    text-decoration: none;
+    color: white;
+  }
+
+
+.parent-gallery-block {
+    padding: 30px 160px;
+    margin-top: 40px;
+}
+.parent-gallery-block .child-gallery-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-gallery-block .child-gallery-block .grand-child-gallery-block {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.parent-gallery-block .child-gallery-block .grand-child-gallery-block  .img-contains{
+    width: 30%;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin: 15px 10px;
+    transition: all 1s ease-in;
+    position: relative;
+}
+
+.parent-gallery-block .child-gallery-block .grand-child-gallery-block  .img-contains img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.parent-gallery-block .child-gallery-block .grand-child-gallery-block  .img-contains:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.parent-block {
+    margin-top: 30px;
+    padding: 40px 100px;
+}
+.parent-block .child-pakages-block {
+    display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+}
+.parent-block .child-pakages-block  .grand-child-block {
+    width: 350px;
+    min-height: 550px;
+    margin: 35px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.parent-block .set{
+  display: flex;
+  justify-content: space-evenly;
+align-items: center;
+}
+.parent-block .child-pakages-block  .grand-child-block .img {
+    width: 100%;
+}
+.parent-block .child-pakages-block  .grand-child-block .img img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.parent-block .child-pakages-block  .grand-child-block .information{
+
+    padding: 20px 20px;
+}
+.parent-block .child-pakages-block  .grand-child-block .information i{
+    color: orange;
+    font-size: 24px;
+}
+.parent-block .child-pakages-block  .grand-child-block .information .city {
+    margin: 0px 4px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.parent-block .child-pakages-block  .grand-child-block .information  p{
+ padding: 10px 2px;
+ color: rgba(0, 0, 0, 0.7);
+ font-weight: 600;
+ font-size: 20px;
+}
+.parent-block .child-pakages-block  .grand-child-block .information  .stars i{
+    font-size: 18px;
+    margin: 5px 0px;
+}
+.parent-block .child-pakages-block  .grand-child-block .information  .price{
+    margin: 15px 0px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.parent-block .child-pakages-block  .grand-child-block .information  .price span {
+    color: darkgrey;
+    font-size: 18px;
+  text-decoration: line-through;
+}
+.parent-block .child-pakages-block  .grand-child-block .information  a{
+ text-decoration: none;
+  color: white;
+  background: orange;
+  transition: all 0.25s ease-in-out;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+  
+
+
+
+@media screen and (max-width:590px) {
+ /*Navbar*/
+ .Navbar {
+   position: absolute;
+   top: 0px;
+   z-index: 6;
+   right: -300px;
+   text-align: center;
+   width: 300px;
+   background: rgb(110, 54, 54);
+   height: 875px;
+   transition: all 0.35s ease-in-out;
+display: none;
+ }
+ #menu {
+   position: absolute;
+   right: 0px;
+   display: block;
+   top: 26px;
+ }
+ .Display-block {
+   position: absolute;
+   right: 0px;
+   display: block;
+ }
+ .Navbar ul{
+   margin-top: 80px;
+ }
+ .Navbar ul .nav {
+  margin: 24px 0px;
+text-transform: uppercase;
+  display: block;
+  font-size: 22px;
+ }
+ .Navbar   #close {
+   color: white;
+   font-size: 36px;
+   margin-top: 20px;
+ margin-left: -200px;
+   
+ }
+ .Parent-block .silder-icon {
+  display: flex;
+  position: absolute;
+  top: 62%;
+  border-radius: 20px;
+  left: 28%;
+ }
+  .booking{
+    margin-top:-100px;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .booking .booking-img{
+    width: 90vw;
+    height: 700px;
+    }
+    .booking .booking-block  {
+      box-shadow: 0px 0px 20px 10px  rgba(0, 0, 0, 0.1);
+    width: 90vw;
+  
+    } 
+    .booking .booking-block form {
+      min-height: 400px;
+    
+    }
+    .booking .booking-block form input{
+      margin: 29px 0px;
+      width: 310px;
+    height: 50px;
+      padding: 22px 4px;
+    }
+    .span {
+      font-size: 2em;
+      height: auto;
+      
+    }
+    .span span {
+      background: rgba(255, 170, 0,0.5);
+      font-size: 1em;
+      margin: 0px 5px;
+      padding: 5px 7px;
+
+      display: inline-block;
+      color: orange;
+      text-align: center;
+    
+    }
+    .parent-block {
+      margin-top: 30px;
+      margin-left: 10px;
+      padding: 40px 60px;
+  }
+  .parent-block .child-pakages-block {
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  }
+  .parent-block .child-pakages-block .grand-child-block{
+    width: 360px;
+  }
+
+
+  .box-container{
+    padding: 30px 10px;
+    margin-top: 30px;
+  }
+  .box-child-container {
+    display: flex;
+    
+    padding: 0px 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .box-child-container .box {
+    width: 100vw;
+  }
+
+  .parent-gallery-block .child-gallery-block .grand-child-gallery-block  .img-contains{
+    width: 90vw;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin-top: 15px;
+    overflow: hidden;
+    margin-left: 14px;
+    transition: all 1s ease-in;
+    position: relative;
+}
+.parent-gallery-block  {
+  padding: 0px 10px;
+}
+#contact-form{
+width: 90vw;
+}
+#contact-form input {
+margin: 28px 0px;
+padding: 15px 0px;
+}
+#contact-form textarea {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+.footer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 50px;
+
+}
+.footer .common{
+  width: 100vw;
+padding: 20px 20px;
+
+margin: 5px 30px;
+}
+.header {
+  overflow: hidden;
+  width: 100vw;
+}
+.Parent-block  {
+  width: 100vw;
+  overflow: hidden;
+}
+.Parent-block .silder  video{
+
+  /* overflow: hidden; */
+height: 800px;
+width: 100%;
+object-fit: cover;
+}
+
+.Parent-block .silder .change {
+  text-align: center;
+}
+.Parent-block .silder .change h1 {
+ font-size: 28px; 
+}
+.Parent-block .silder .change h4 {
+  font-size: 18px;
+  padding-left: 40px;
+  padding-right: 20px;
+
+ }
+}
+
+
+
+@media screen and (min-width:880px) and (max-width:1200px) {
+  .Parent-block .silder  video{
+
+    /* overflow: hidden; */
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+  }
+  .booking{
+    padding: 10px 0px;
+  } 
+  .parent-block{
+    padding: 10px 0px;
+  }
+.parent-block .child-pakages-block .grand-child-block{
+  margin: 20px 10px;
+}
+.box-container{
+  padding: 10px 0px;
+}
+
+.parent-gallery-block {
+  padding: 10px 0px;
+}
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:876px) {
+  .Parent-block .silder  video{
+
+    /* overflow: hidden; */
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+  }
+  .booking{
+    padding: 10px 0px;
+  } 
+  .parent-block{
+    padding: 10px 0px;
+  }
+.parent-block .child-pakages-block .grand-child-block{
+  margin: 20px 10px;
+}
+.box-container{
+  padding: 10px 0px;
+}
+
+.parent-gallery-block {
+  padding: 10px 0px;
+}
+.Parent-block .silder .change h1 {
+  font-size: 38px; 
+ }
+ .Parent-block .silder .change h4 {
+   font-size: 22px;
+ 
+  }
+  .booking{
+    margin-top:-100px;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .box-child-container,.parent-block .child-pakages-block{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   .parent-block .child-pakages-block .grand-child-block{
+    width: 420px;
+  }
+  .header div nav ul li {
+    margin: 0px 5px;
+  }
+  .footer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 30px 50px;
+  
+  }
+  .footer .common {
+    width: 100%;
+  }
+  .booking .booking-block  {
+    box-shadow: 0px 0px 20px 10px  rgba(0, 0, 0, 0.1);
+  width: 90vw;
+
+  } 
+  #contact-form {
+    padding: 10px 30px;
+    height: auto;
+  }
+#contact-form input{
+    margin: 28px 10px;
+    padding: 20px 20px;
+  
+  }
+  #contact-form textarea{
+margin-top: 40px;
+  }
+}
